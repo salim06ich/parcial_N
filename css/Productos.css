@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header y Navegación */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #232B59;
+    padding: 10px 30px;
+    box-shadow: 0px 2px 5px #0000004d;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav li a {
+    color: #FFFFFF;
+    font-family: 'Lora', sans-serif bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav li a:hover {
+    color: #FFFFFF;
+    background-color: #A64521;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+.iconos a {
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.iconos a:hover {
+    color: #A64521;
+}
+
+/* Sección Principal */
+
+.principal img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.principal {
+    position: relative;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenidouno {
+    text-align: center;
+    color: #FFFFFFE5;
+    background: #2D4BA680;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contenidouno h1 {
+    font-family: 'Playfair Display';
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #D9985F;
+}
+
+.contenidouno h2 {
+    font-family: 'Playfair+Display' ;
+    font-size: 30px;
+    color: #D9985F;
+    margin-bottom: 20px;
+}
+
+.contenidouno p {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.button {
+    background-color: #D9985F;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.button:hover {
+    background-color: #A64521;
+    color: #FFFFFF;
+}
+
+/* Fondo principal */
+body {
+    background-color: #202D73;
+    color: #232B59;
+    font-family: Arial, sans-serif;
+}
+
+/* Títulos */
+h1, h2 {
+    color: #202D73;
+}
+
+/* Sección de productos */
+.productos {
+    text-align: center;
+    background-color: #FFFFFF;
+    padding: 20px;
+}
+
+.producto {
+    display: inline-block;
+    width: 250px;
+    margin: 25px;
+    text-align: center;
+    background-color: #FFFFFF;
+    padding: 10px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.producto:hover {
+    transform: scale(1.1);
+}
+
+.producto img {
+    width: 100%;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.producto:hover img {
+    transform: scale(1.1);
+}
+
+/* Estilos para el texto y precios */
+.producto h2 {
+    font-size: 18px;
+    color: #202D73;
+    margin-top: 10px;
+    font-family: "Merriweather";
+}
+
+.producto p {
+    font-size: 16px;
+    color: #202D73;
+    font-weight: bold;
+    font-family: "lato";
+}
+
+/* Botones */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #D9985F;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.button:hover {
+    background-color: #A64521;
+}
+
+/* Banner Sección */
+.banner {
+    position: relative;
+    padding: 50px;
+    text-align: center;
+    background-image: url('../imagen/Delivery 2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #202D73;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #202D73;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+.banner .contenidodos {
+    position: relative;
+    z-index: 2;
+}
+
+.banner h2 {
+    font-family: 'Merriweather';
+    font-size: 35px;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.figuras a {
+    font-size: 40px;
+    color: #D9985F;
+    margin: 0 20px;
+}
+
+.figuras a:hover {
+    color: #A64521;
+}
+
+/* Footer */
+footer {
+    background-color: #232B59;
+    padding: 40px 20px;
+    color: #FFFFFF;
+}
+
+.footer-link {
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    margin: 10px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #D9985F;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+    color: #A64521;
+}
+
+.footer-social a {
+    color: #D9985F;
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.footer-social a:hover {
+    color: #A64521;
+}

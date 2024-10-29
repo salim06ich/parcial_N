@@ -1,0 +1,427 @@
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header y Navegación */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #232B59; /* Fondo principal */
+    padding: 10px 30px;
+    box-shadow: 0px 2px 5px #0000004d;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav li a {
+    color: #D9985F; /* Botones */
+    font-family: 'Lora', sans-serif; 
+    text-transform: uppercase; 
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav li a:hover {
+    color: #FFFFFF;
+    background-color: #A64521; /* Hover en botones */
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+.iconos a {
+    color: #D9985F; /* Iconos */
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.iconos a:hover {
+    color: #A64521; /* Hover iconos */
+}
+
+/* Sección Principal */
+
+.principal img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Coloca el video detrás del contenido */
+}
+
+.principal {
+    position: relative;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenidouno {
+    text-align: center;
+    color: #FFFFFF; /* Contraste para texto */
+    background: #2D4BA680; /* Fondo translúcido */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contenidouno h1 {
+    font-family: 'Playfair+Display';
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #D9985F; /* Títulos destacados */
+}
+
+.contenidouno h2 {
+    font-family: 'Playfair+Display';
+    font-size: 30px;
+    color: #FFFFFF; /* Color para subtítulos */
+    margin-bottom: 20px;
+}
+
+.contenidouno p {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    color: #FFFFFF;
+}
+
+.button {
+    background-color: #D9985F; /* Botones */
+    color: #FFFFFF;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.button:hover {
+    background-color: #A64521; /* Hover en botones */
+    color: #FFFFFF;
+}
+
+/* Banner Sección */
+.banner {
+    background-color: #232B59; /* Fondo banner */
+    padding: 50px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    height: 150px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner h2 {
+    font-family: 'Merriweather';
+    font-size: 35px;
+    color: #D9985F; /* Títulos de la galería */
+    margin-bottom: 30px;
+}
+
+.figuras a {
+    font-size: 15px;
+    color: #D9985F;
+    margin: 0 15px;
+}
+
+.figuras a:hover {
+    color: #A64521; ;
+}
+
+/*baner de mapas*/
+
+.banner-PERU {
+    position: relative;
+    padding: 50px;
+    text-align: center;
+    background-image: url('../imagen/BANER LIMA 3.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 130px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #D9985F;
+    box-shadow: 0px 3px 3px #00000079;
+}
+
+.banner-PERU::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(35, 43, 89, 0.76); /* Fondo banner Perú */
+    opacity: 0.7; 
+    z-index: 1;
+}
+
+.banner-PERU .contenidodos {
+    position: relative;
+    z-index: 2;
+}
+
+.banner-PERU h2 {
+    font-family: 'Merriweather';
+    font-size: 55px;
+    color: #D9985F;
+    margin-bottom: 20px;
+}
+
+.banner-ARGENTINA {
+    position: relative;
+    padding: 50px;
+    text-align: center;
+    background-image: url('../imagen/BANER\ BUENOS\ AIRES.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 130px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #D9985F;
+    box-shadow: 0px 3px 3px #00000079;
+}
+
+.banner-ARGENTINA::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(35, 43, 89, 0.76);
+    opacity: 0.7;
+    z-index: 1;
+}
+
+.banner-ARGENTINA .contenidodos {
+    position: relative;
+    z-index: 2;
+}
+
+.banner-ARGENTINA h2 {
+    font-family: 'Merriweather';
+    font-size: 55px;
+    color: #D9985F;
+    margin-bottom: 20px;
+}
+
+/*BANNER CHILE*/
+.banner-CHILE {
+    position: relative;
+    padding: 50px;
+    text-align: center;
+    background-image: url('../imagen/BANNER\ SANTIAGO.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 130px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #D9985F;
+    box-shadow: 0px 3px 3px #00000079;
+}
+
+.banner-CHILE::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(35, 43, 89, 0.76);
+    opacity: 0.7;
+    z-index: 1;
+}
+
+.banner-CHILE .contenidodos {
+    position: relative;
+    z-index: 2;
+}
+
+.banner-CHILE h2 {
+    font-family: 'Merriweather';
+    font-size: 55px;
+    color: #D9985F;
+    margin-bottom: 20px;
+}
+
+/* Sección Principal */
+
+body {
+    background-color: #232B59;
+    color: #D9985F;
+    font-family: Arial, sans-serif;
+}
+
+.MAPAS img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.MAPAS {
+    position: relative;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.MAPAS .contenidouno {
+    justify-content: flex-end;
+    position: absolute;
+}
+
+.MAPAS button {
+    margin-top: 90%;
+    margin-bottom: 50%;
+}
+
+.opciones-compra {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #ffffff;
+}
+
+.opciones-compra h2 {
+    color: #D9985F;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.opciones-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.opcion {
+    width: 150px;
+    text-align: center;
+}
+
+.icono {
+    background-color: #ffffff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px;
+    overflow: hidden;
+}
+
+.icono img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.opcion h3 {
+    font-size: 16px;
+    color: #D9985F;
+    margin-bottom: 10px;
+    font-family:'Lato' ;
+}
+
+.opcion p {
+    font-size: 14px;
+    color: #000000;
+}
+
+/* Footer */
+footer {
+    background-color: #232B59; /* Fondo del footer */
+    padding: 40px 20px;
+    color: #FFFFFF;
+}
+
+.footer-link {
+    color: #FFFFFF;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    margin: 10px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #D9985F; /* Títulos del footer */
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+    color: #A64521;
+}
+
+.footer-social a {
+    color: #D9985F; /* Iconos de redes sociales */
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.footer-social a:hover {
+    color: #A64521;
+}
+
